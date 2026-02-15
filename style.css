@@ -1,0 +1,81 @@
+:root {
+    --vinotinto: #4a0404;
+    --dorado: #c5a059;
+    --crema: #fdfaf5;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: var(--crema);
+    color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--vinotinto);
+    color: var(--dorado);
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 4px solid var(--dorado);
+}
+
+.logo-img { width: 80px; height: auto; }
+
+h1 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin: 10px 0 0; }
+
+.menu-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    color: var(--vinotinto);
+    text-align: center;
+    border-bottom: 2px solid var(--dorado);
+    margin: 35px 0 15px;
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 12px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 4px;
+}
+
+.name { font-size: 0.95rem; font-weight: 500; flex: 1; padding-right: 10px; }
+.price { color: var(--vinotinto); font-weight: 700; min-width: 50px; text-align: right; }
+
+.contornos-list {
+    font-size: 0.85rem;
+    font-style: italic;
+    background: #fff;
+    padding: 15px;
+    border-left: 4px solid var(--vinotinto);
+    line-height: 1.6;
+}
+
+.extra-info { font-size: 0.8rem; color: #666; text-align: center; }
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.75rem;
+    color: var(--vinotinto);
+    opacity: 0.8;
+}
+
+/* Ajustes para pantallas más grandes (PC) */
+@media (min-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    .menu-container { max-width: 800px; }
+    .name { font-size: 1.1rem; }
+}
