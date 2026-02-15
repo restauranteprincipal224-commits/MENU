@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú - Restaurante Principal HCV</title>
+    <title>Menú Completo - Bar Restaurant Principal HCV</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-       
-          
+        <div class="logo-container">
+            <img src="imagenes/logo.png" alt="Logo HCV" class="logo-img">
         </div>
-        <h1 id="titulo">BAR RESTAURANT PRINCIPAL</h1>
+        <h1>BAR RESTAURANT PRINCIPAL</h1>
         <p class="subtitle">HCV</p>
         <div class="divider"></div>
     </header>
@@ -36,15 +36,15 @@
 
         <section class="menu-section">
             <h2 class="section-title">Principales</h2>
-            <div class="menu-item"><span class="name">Punta Prime Nacional 300 gr.</span><span class="price">$22</span></div>
+            <div class="menu-item"><span class="name">Punta Prime Nacional 300 gr. (1 pers./2 C.)</span><span class="price">$22</span></div>
             <div class="menu-item"><span class="name">Parrilla Argentina (2 pers.)</span><span class="price">$25</span></div>
             <div class="menu-item"><span class="name">Paella Marinera (2 pers.)</span><span class="price">$40</span></div>
             <div class="menu-item"><span class="name">Paella Valenciana (2 pers.)</span><span class="price">$40</span></div>
             <div class="menu-item"><span class="name">Pasta Marinera</span><span class="price">$15</span></div>
             <div class="menu-item"><span class="name">Pasta Carbonara</span><span class="price">$10</span></div>
             <div class="menu-item"><span class="name">Pasta Filetto Betina</span><span class="price">$12</span></div>
-            <div class="menu-item"><span class="name">Churrasco de Mero</span><span class="price">$25</span></div>
-            <div class="menu-item"><span class="name">Filet de Róbalo</span><span class="price">$18</span></div>
+            <div class="menu-item"><span class="name">Churrasco de Mero (Al ajillo o Menier)</span><span class="price">$25</span></div>
+            <div class="menu-item"><span class="name">Filet de Róbalo (Al ajillo o Menier)</span><span class="price">$18</span></div>
             <div class="menu-item"><span class="name">Cartoccio de Lomito</span><span class="price">$20</span></div>
             <div class="menu-item"><span class="name">Cartoccio de Pollo</span><span class="price">$18</span></div>
             <div class="menu-item"><span class="name">Risotto Negro</span><span class="price">$15</span></div>
@@ -57,13 +57,14 @@
 
         <section class="menu-section">
             <h2 class="section-title">Contornos</h2>
-            <div class="contornos-list">
-                Yuca Sancochada, Yuca Frita, Arroz Primavera, Papas al Vapor, Papas Fritas, Papas Fritas Trufadas, Puré de Papa, Jojoto al Grill, Vegetales al Grill, Ración de Morcilla, Ración de Chistorra, Ración de Chorizo. [cite: 12]
+            <div class="contornos-grid">
+                <span>Yuca Sancochada o frita, Arroz primavera, Papas al vapor, fritas o trufadas, Pure de papa, Jojoto al Grill, Vegetales al Grill, Racion de Morcilla, Racion de Chistorra, Racion de Chorizo.</span><span>
             </div>
         </section>
 
         <section class="menu-section">
             <h2 class="section-title">Hamburguesas y Paninis</h2>
+             <p class="section-note">Todas se sirven con Papas Fritas</p>
             <div class="menu-item"><span class="name">Hamburguesa Prime (170 gr)</span><span class="price">$14</span></div>
             <div class="menu-item"><span class="name">Hamburguesa Pollo Crispy (170 gr)</span><span class="price">$12</span></div>
             <div class="menu-item"><span class="name">Hamburguesa Tortuguita (100 gr)</span><span class="price">$6</span></div>
@@ -74,58 +75,126 @@
 
         <section class="menu-section">
             <h2 class="section-title">Ensaladas</h2>
-            <div class="menu-item"><span class="name">César Normal</span><span class="price">$8</span></div>
-            <div class="menu-item"><span class="name">César con Pollo</span><span class="price">$12</span></div>
-            <div class="menu-item"><span class="name">Ensalada Avocado</span><span class="price">$12</span></div>
-            <div class="menu-item"><span class="name">Ensalada Aguacate</span><span class="price">$14</span></div>
-            <div class="menu-item"><span class="name">Ensalada Griega</span><span class="price">$12</span></div>
-            <div class="menu-item"><span class="name">Ensalada Capressa</span><span class="price">$14</span></div>
-            <div class="menu-item"><span class="name">Ensalada Thai</span><span class="price">$12</span></div>
-            <div class="menu-item"><span class="name">Ensalada Principal</span><span class="price">$15</span></div>
+            <div class="menu-item">
+                <div class="info"><span class="name">César Normal</span><small>Lechuga o Berro</small></div>
+                <span class="price">$8</span>
+            </div>
+            <div class="menu-item">
+                <div class="info"><span class="name">César con Pollo</span><small>Lechuga o Berro</small></div>
+                <span class="price">$12</span>
+            </div>
+            <div class="menu-item">
+                <div class="info">
+                    <span class="name">Avocado</span>
+                    <small>Berro, palmito, aguacate, nueces, aderezo de manzana, tomate cherry.</small>
+                </div>
+                <span class="price">$12</span>
+            </div>
+            <div class="menu-item">
+                <div class="info">
+                    <span class="name">Griega</span>
+                    <small>Berro, tomate cherry, aceituna negra, almendra, cebolla encurtida, yogurt, queso feta, pepino.</small>
+                </div>
+                <span class="price">$12</span>
+            </div>
+            <div class="menu-item">
+                <div class="info">
+                    <span class="name">Thai</span>
+                    <small>Zanahoria, repollo, pimentón, pepino, tomate cherry, perejil, almendra, cebollín.</small>
+                </div>
+                <span class="price">$12</span>
+            </div>
+            <div class="menu-item">
+                <div class="info">
+                    <span class="name">Principal</span>
+                    <small>Rúcula, prosciutto, tomate seco, maíz, berenjena, champiñones, aderezo balsámico.</small>
+                </div>
+                <span class="price">$15</span>
+            </div>
+            <div class="menu-item"><span class="name">Capressa</span><span class="price">$14</span></div>
+            </div>
+            <div class="menu-item">
+                <div class="info">
+                    <span class="name">Aguacate y palmito </span>
+                    <small>Cesar,berro y lechuga, camarones o pollo.</small>
+                </div>
+                <span class="price">$15</span>
         </section>
 
         <section class="menu-section">
             <h2 class="section-title">Pizzas</h2>
-            <div class="menu-item"><span class="name">Pizza Margarita</span><span class="price">$10</span></div>
-            <div class="menu-item"><span class="name">Pizza Primavera</span><span class="price">$15</span></div>
-            <div class="menu-item"><span class="name">Pizza Peperoni</span><span class="price">$15</span></div>
-            <div class="menu-item"><span class="name">Pizza Vegetariana</span><span class="price">$15</span></div>
-            <div class="menu-item"><span class="name">Pizza Prosciutto Fungi</span><span class="price">$18</span></div>
-            <p class="extra-info">Cualquier sabor extra: $3 </p>
+            <div class="menu-item"><span class="name">Margarita</span><span class="price">$10</span></div>
+            <div class="menu-item"><span class="name">Primavera</span><span class="price">$15</span></div>
+            <div class="menu-item"><span class="name">Peperoni</span><span class="price">$15</span></div>
+            <div class="menu-item"><span class="name">Vegetariana</span><span class="price">$15</span></div>
+            <div class="menu-item"><span class="name">Prosciutto Fungi</span><span class="price">$18</span></div>
+          <div class="menu-item"><span class="name">ingrediente extra</span><span class="price">$3</span></div>
         </section>
 
+         </section>
+
         <section class="menu-section">
+            <h2 class="section-title">Postres</h2>
+            <div class="menu-item"><span class="name">Torta de Chocolate</span><span class="price">$6</span></div>
+            <div class="menu-item"><span class="name">Brownie</span><span class="price">$6</span></div>
+            <div class="menu-item"><span class="name">Extra de helado</span><span class="price">$2</span></div>
+            <div class="menu-item"><span class="name">Tres Leches</span><span class="price">$6</span></div>
+            <div class="menu-item"><span class="name">Pie de Limon</span><span class="price">$6</span></div>
+
+            </section>
+            <section class="menu-section">
             <h2 class="section-title">Bebidas</h2>
             <div class="menu-item"><span class="name">Agua</span><span class="price">$1</span></div>
-            <div class="menu-item"><span class="name">Té Lipton</span><span class="price">$3</span></div>
+            <div class="menu-item"><span class="name">Te Lipton</span><span class="price">$3</span></div>
             <div class="menu-item"><span class="name">Soda</span><span class="price">$3</span></div>
-            <div class="menu-item"><span class="name">Gatorade</span><span class="price">$3</span></div>
             <div class="menu-item"><span class="name">Jugo de Frutas</span><span class="price">$4</span></div>
+            <div class="menu-item"><span class="name">Gatorade</span><span class="price">$3</span></div>
+
+        <section class="menu-section">
+            <h2 class="section-title">Tragos y Copas</h2>
+            <div class="menu-item"><span class="name">Mojito</span><span class="price">$5</span></div>
+            <div class="menu-item"><span class="name">Caribe Beach</span><span class="price">$5</span></div>
+            <div class="menu-item"><span class="name">Limoncello Spritz</span><span class="price">$5</span></div>
+            <div class="menu-item"><span class="name">Maracuyá</span><span class="price">$5</span></div>
+            <div class="menu-item"><span class="name">Mai Tai</span><span class="price">$5</span></div>
+            <div class="menu-item"><span class="name">Michelada</span><span class="price">$5</span></div>
+            <div class="menu-item"><span class="name">Margarita</span><span class="price">$5</span></div>
+            <div class="menu-item"><span class="name">Tinto de Verano</span><span class="price">$3</span></div>
+            <div class="menu-item"><span class="name">Cuba Libre</span><span class="price">$3</span></div>
+            <div class="menu-item"><span class="name">Ron Gran Reserva</span><span class="price">$3</span></div>
+            <div class="menu-item"><span class="name">Ron Linaje</span><span class="price">$4</span></div>
+            <div class="menu-item"><span class="name">Whisky Old Parr 12 años</span><span class="price">$6</span></div>
+            <div class="menu-item"><span class="name">Whisky B&W 8 años</span><span class="price">$4</span></div>
+            <div class="menu-item"><span class="name">Copa de Vino Tinto</span><span class="price">$4</span></div>
         </section>
 
         <section class="menu-section">
-            <h2 class="section-title">Tragos y Cervezas</h2>
-            <div class="menu-item"><span class="name">Mojito</span><span class="price">$5</span></div>
-            <div class="menu-item"><span class="name">Margarita</span><span class="price">$5</span></div>
-            <div class="menu-item"><span class="name">Tinto de Verano</span><span class="price">$3</span></div>
-            <div class="menu-item"><span class="name">Cerveza Polar / Light</span><span class="price">$1</span></div>
-            <div class="menu-item"><span class="name">Solera Azul / Verde</span><span class="price">$1.20</span></div>
+            <h2 class="section-title">Cervezas</h2>
+            <div class="menu-item"><span class="name">Polar</span><span class="price">$1</span></div>
+            <div class="menu-item"><span class="name">Polar Light</span><span class="price">$1</span></div>
             <div class="menu-item"><span class="name">Zulia</span><span class="price">$1</span></div>
+            <div class="menu-item"><span class="name">Solera Azul</span><span class="price">$1.20</span></div>
+            <div class="menu-item"><span class="name">Solera Verde</span><span class="price">$1.20</span></div>
+            <div class="menu-item"><span class="name">Cerveza de Lata</span><span class="price">$2.50</span></div>
         </section>
 
         <section class="menu-section">
             <h2 class="section-title">Servicios de Botellas</h2>
             <div class="menu-item"><span class="name">Vino Tinto / Blanco</span><span class="price">$20</span></div>
             <div class="menu-item"><span class="name">Tobo de Cerveza (10 und.)</span><span class="price">$10</span></div>
+            <div class="menu-item"><span class="name">Vodka Gordon</span><span class="price">$28</span></div>
+            <div class="menu-item"><span class="name">Ron Gran Reserva</span><span class="price">$28</span></div>
+            <div class="menu-item"><span class="name">Caroreña</span><span class="price">$20</span></div>
+            <div class="menu-item"><span class="name">Ron Linaje</span><span class="price">$35</span></div>
+            <div class="menu-item"><span class="name">Whisky B&W 8 años</span><span class="price">$40</span></div>
             <div class="menu-item"><span class="name">Whisky Old Parr 12 años</span><span class="price">$55</span></div>
             <div class="menu-item"><span class="name">Whisky Buchanan's 12 años</span><span class="price">$55</span></div>
-            <div class="menu-item"><span class="name">Ron Linaje</span><span class="price">$35</span></div>
         </section>
 
     </main>
 
     <footer>
-        <p>RESTAURANTE PRINCIPAL DEL HCV Reservaciones: 0412-276-49-80</p>
+        <p>BAR RESTAURANT PRINCIPAL - HOGAR CANARIO VENEZOLANO</p>
     </footer>
 
 </body>
